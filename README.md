@@ -81,11 +81,11 @@ APP_PORT=8080
 
 Base URL: `http://localhost:8080`
 
-### GET /products
+### GET /video-games
 Retorna todos los videojuegos.
 
 ```bash
-curl http://localhost:8080/products
+curl http://localhost:8080/video-games
 ```
 
 **Respuesta `200 OK`:**
@@ -105,11 +105,11 @@ curl http://localhost:8080/products
 
 ---
 
-### GET /products/:id
+### GET /video-games/:id
 Retorna un videojuego por ID.
 
 ```bash
-curl http://localhost:8080/products/1
+curl http://localhost:8080/video-games/1
 ```
 
 **Respuesta `200 OK`:** objeto del videojuego.
@@ -121,11 +121,11 @@ curl http://localhost:8080/products/1
 
 ---
 
-### POST /products
+### POST /video-games
 Crea un nuevo videojuego.
 
 ```bash
-curl -X POST http://localhost:8080/products \
+curl -X POST http://localhost:8080/video-games \
   -H "Content-Type: application/json" \
   -d '{
     "campo1": "Elden Ring",
@@ -143,11 +143,11 @@ curl -X POST http://localhost:8080/products \
 
 ---
 
-### PUT /products/:id
+### PUT /video-games/:id
 Actualiza un videojuego completo por ID.
 
 ```bash
-curl -X PUT http://localhost:8080/products/1 \
+curl -X PUT http://localhost:8080/video-games/1 \
   -H "Content-Type: application/json" \
   -d '{
     "campo1": "Elden Ring",
@@ -165,11 +165,11 @@ curl -X PUT http://localhost:8080/products/1 \
 
 ---
 
-### DELETE /products/:id
+### DELETE /video-games/:id
 Elimina un videojuego por ID.
 
 ```bash
-curl -X DELETE http://localhost:8080/products/1
+curl -X DELETE http://localhost:8080/video-games/1
 ```
 
 **Respuesta `204 No Content`:** eliminado correctamente.
