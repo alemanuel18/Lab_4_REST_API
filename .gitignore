@@ -13,5 +13,4 @@ Thumbs.db
 npm-debug.log*
 
 # Docker
-docker-compose.yml
 *.env.local
