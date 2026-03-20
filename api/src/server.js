@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.use("/products", productRoutes);
+app.use("/video-games", productRoutes);
 
 initDB()
     .then(() => {
